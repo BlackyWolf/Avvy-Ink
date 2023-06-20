@@ -5,12 +5,16 @@ module.exports = {
         './components/**/*.{js,ts,jsx,tsx,mdx}',
         './app/**/*.{js,ts,jsx,tsx,mdx}',
     ],
-    plugins: [],
+    plugins: [
+        '@tailwindcss/forms'
+    ],
     theme: {
         extend: {
             fontFamily: {
                 'crimson-pro': ['Crimson Pro', 'serif'],
-                inter: ['Inter', 'sans-serif']
+                inter: ['Inter', 'sans-serif'],
+                pacifico: ['Pacifico', 'cursive'],
+                raleway: ['Raleway', 'sans-serif']
             }
         }
     }
