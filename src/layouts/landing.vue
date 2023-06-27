@@ -1,21 +1,25 @@
 <template>
-    <div class="container mx-auto">
-        <nav class="flex items-center space-x-10 py-2 nav">
+    <Container class="my-12">
+        <nav class="flex items-center space-x-10 pt-4 nav">
             <NuxtLink to="/" class="branding">
-                <BrandingLogo class="text-4xl" />
+                <Logo class="text-4xl" />
             </NuxtLink>
             <NuxtLink to="/">Home</NuxtLink>
-            <NuxtLink to="#about">About</NuxtLink>
-            <NuxtLink to="#pricing">Pricing</NuxtLink>
-            <NuxtLink to="https://us.avvy.ink" target="_blank">Community</NuxtLink>
-            <NuxtLink to="#contact">Contact</NuxtLink>
+            <NuxtLink to="https://us.avvy.ink" target="_blank">
+                Community<Icon name="ph:arrow-line-up-right"></Icon>
+            </NuxtLink>
+            <NuxtLink to="/contact">Contact</NuxtLink>
+
+            <NuxtLink to="/me" class="!ml-auto login">
+                <Button color="indigo">Enter App</Button>
+            </NuxtLink>
         </nav>
 
         <main class="py-8">
-            <slot />
+            <slot></slot>
         </main>
 
-        <footer class="text-sm py-4 flex justify-between">
+        <footer class="text-sm mt-4 flex justify-between">
             Copyright &copy; Avvy Ink. All rights reserved.
 
             <div class="space-x-10">
@@ -27,12 +31,12 @@
                 </NuxtLink>
             </div>
         </footer>
-    </div>
+    </Container>
 </template>
 
 <style>
 body {
-    @apply bg-slate-100;
+    @apply bg-slate-200 bg-noisy;
 }
 
 .nav a {
@@ -41,5 +45,9 @@ body {
 
 .nav .branding {
     @apply px-0 hover:border-b-transparent;
+}
+
+.nav .login {
+    @apply hover:border-b-transparent;
 }
 </style>

@@ -1,6 +1,5 @@
 <template>
-    <div>
-        bruh
+    <div class="container mx-auto">
         <slot></slot>
     </div>
 </template>
