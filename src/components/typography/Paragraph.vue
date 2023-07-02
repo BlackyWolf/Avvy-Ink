@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const properties = withDefaults(defineProps<{
+withDefaults(defineProps<{
     margin?: boolean;
 }>(), {
     margin: true
@@ -7,7 +7,7 @@ const properties = withDefaults(defineProps<{
 </script>
 
 <template>
-    <p :class="{ 'mb-4': properties.margin }">
+    <p :class="{ 'mb-4': margin }">
         <slot></slot>
     </p>
 </template>

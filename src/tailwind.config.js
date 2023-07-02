@@ -8,7 +8,9 @@ module.exports = {
         './nuxt.config.{js,ts}',
         './app.vue'
     ],
-    plugins: [],
+    plugins: [
+        require('@tailwindcss/forms')
+    ],
     theme: {
         extend: {
             backgroundImage: {

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const properties = withDefaults(defineProps<{
+withDefaults(defineProps<{
     pad?: boolean;
 }>(), {
     pad: true
@@ -11,7 +11,7 @@ const properties = withDefaults(defineProps<{
         <div>
             <slot name="header"></slot>
         </div>
-        <div :class="{ 'p-8': properties.pad }">
+        <div :class="{ 'p-8': pad }">
             <slot></slot>
         </div>
         <div>

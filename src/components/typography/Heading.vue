@@ -1,7 +1,7 @@
 <script setup lang="ts">
 type HeadingSize = '1' | '2' | '3' | '4' | '5' | '6';
 
-const { bold, center, size } = defineProps<{
+defineProps<{
     bold?: boolean;
     center?: boolean;
     size: HeadingSize;

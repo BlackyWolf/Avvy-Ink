@@ -11,7 +11,7 @@
             <NuxtLink to="/contact">Contact</NuxtLink>
 
             <NuxtLink to="/me" class="!ml-auto login">
-                <Button color="indigo">Enter App</Button>
+                <Button color="medium-violet">Enter App</Button>
             </NuxtLink>
         </nav>
 
@@ -19,18 +19,7 @@
             <slot></slot>
         </main>
 
-        <footer class="text-sm mt-4 flex justify-between">
-            Copyright &copy; Avvy Ink. All rights reserved.
-
-            <div class="space-x-10">
-                <NuxtLink to="/docs/tos" class="underline hover:no-underline" target="_blank">
-                    Terms of Services
-                </NuxtLink>
-                <NuxtLink to="/docs/privacy" class="underline hover:no-underline" target="_blank">
-                    Privacy Policy
-                </NuxtLink>
-            </div>
-        </footer>
+        <Footer class="mt-4"></Footer>
     </Container>
 </template>
 

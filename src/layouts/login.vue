@@ -1,6 +1,9 @@
 <template>
-    <div>
-        bruh
-        <slot></slot>
-    </div>
+    <slot></slot>
 </template>
+
+<style>
+body {
+    background: white;
+}
+</style>

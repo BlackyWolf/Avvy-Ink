@@ -1,6 +1,6 @@
 import { Client, Account, ID, Databases, Storage, Functions, Locale, Avatars } from 'appwrite';
 
-export default defineNuxtPlugin(nuxtApp => {
+export default defineNuxtPlugin(() => {
     const runtimeConfiguration = useRuntimeConfig();
 
     const client = new Client()
